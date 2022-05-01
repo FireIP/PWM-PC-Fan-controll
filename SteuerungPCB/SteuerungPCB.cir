@@ -1,0 +1,28 @@
+.title KiCad schematic
+U1 /12V /G /6V L7806
+R8 Net-_A1-Pad19_ Net-_R8-Pad2_ 
+RV1 /G Net-_A1-Pad22_ /V R_POT
+Q2 Net-_A1-Pad12_ Net-_M2-Pad3_ /G IRL520NPBF
+M2 Net-_A1-Pad21_ /12V Net-_M2-Pad3_ Fan_Tacho
+Q1 Net-_A1-Pad13_ Net-_M1-Pad3_ /G IRL520NPBF
+M1 Net-_A1-Pad20_ /12V Net-_M1-Pad3_ Fan_Tacho
+USR-ES1_W5500 /G /G /G /V /MO /V /SCK NC_01 /CS NC_02 NC_03 /MI Conn_02x06_Odd_Even
+U3 /V Net-_A1-Pad26_ /G LM35-LP
+J1 /CS_SD /SCK /MO /MI /V /G Conn_01x06_Female
+R9 Net-_A1-Pad21_ /V 
+R10 Net-_A1-Pad20_ /V 
+Q3 Net-_A1-Pad6_ Net-_M3-Pad3_ /G IRL520NPBF
+M3 Net-_M3-Pad1_ /12V Net-_M3-Pad3_ Fan_Tacho
+TP_Tacho_3 Net-_M3-Pad1_ TestPoint
+R11 /V Net-_M3-Pad1_ 
+R2 Net-_R2-Pad1_ Net-_A1-Pad23_ 
+U2 Net-_R3-Pad2_ Net-_R4-Pad2_ /G Net-_R5-Pad1_ Net-_R8-Pad2_ Net-_R6-Pad1_ Net-_R7-Pad1_ /G Net-_R1-Pad2_ Net-_R2-Pad1_ KCSC02-105
+R1 Net-_A1-Pad5_ Net-_R1-Pad2_ 
+R7 Net-_R7-Pad1_ Net-_A1-Pad11_ 
+R6 Net-_R6-Pad1_ Net-_A1-Pad10_ 
+R5 Net-_R5-Pad1_ Net-_A1-Pad9_ 
+R4 Net-_A1-Pad8_ Net-_R4-Pad2_ 
+R3 Net-_A1-Pad7_ Net-_R3-Pad2_ 
+A1 NC_04 NC_05 NC_06 /G Net-_A1-Pad5_ Net-_A1-Pad6_ Net-_A1-Pad7_ Net-_A1-Pad8_ Net-_A1-Pad9_ Net-_A1-Pad10_ Net-_A1-Pad11_ Net-_A1-Pad12_ Net-_A1-Pad13_ /MO /MI /SCK NC_07 NC_08 Net-_A1-Pad19_ Net-_A1-Pad20_ Net-_A1-Pad21_ Net-_A1-Pad22_ Net-_A1-Pad23_ /CS_SD /CS Net-_A1-Pad26_ /V NC_09 /G /6V Arduino_Nano_v3.x
+Vin1 /12V /G /G NEB21R
+.end

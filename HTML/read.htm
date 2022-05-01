@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<h1>Lüftersteuerug</h1>
+
+<a href="http://192.
+168.178.18/display">
+  Aktuelle Temperatur: 
+  #AktTemp# °C</a>
+<br><br>
+
+<form action="">
+  <label for="stufe">
+    Stufe(0-9)
+    [#AktStufe#]:
+    <br></label>
+  <input type="number"
+   id="stufe" 
+  name="stufe"><br><br>
+  oder <br><br>
+  <label for="wert">
+    Wert(0 | 25-255)
+    [#AktFan#]:
+    <br></label>
+  <input type="number"
+   id="wert" 
+  name="wert"><br><br>
+  <input type="submit"
+   value="OK">
+</form>
+
+</body>
+</html>
