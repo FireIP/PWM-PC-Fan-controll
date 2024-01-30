@@ -3,7 +3,7 @@
 #include "SdFat.h"
 #include "sdios.h"
 
-int AbfrZeit = 2000; // Zeitabstand für die Abfragen des Tachosignals
+int AbfrZeit  2000; // Zeitabstand für die Abfragen des Tachosignals
 
 int8_t fan1 = 10;
 int8_t fan1Tacho = A1;
@@ -448,20 +448,20 @@ void sendHtmFile(File32 file, EthernetClient client) {
       line[n-1] = 0;
       // replace next line with LCD call to display line
       String out = String(line);
-      out.replace("#AktTemp#", String(temperatur));
+      out.replace("#AkTmp#", String(temperatur));
       if(onlineCtr){
-        out.replace("#AktFan#", String(tempFanOnline));
-        out.replace("#AktStufe#", String(stufeOnline));
+        out.replace("#AkF#", String(tempFanOnline));
+        out.replace("#AkSt#", String(stufeOnline));
       }
       else{
-        out.replace("#AktFan#", String(fan));
-        out.replace("#AktStufe#", String(stufe));
+        out.replace("#AkF#", String(fan));
+        out.replace("#AkSt#", String(stufe));
       }
       
       if(!readHtm){
-        out.replace("#Fan1rpm#", String(RPM1));
-        out.replace("#Fan2rpm#", String(RPM2));
-        out.replace("#AktAuto#", String(onlineCtr));
+        out.replace("#F1r#", String(RPM1));
+        out.replace("#F2r#", String(RPM2));
+        out.replace("#AkA#", String(onlineCtr));
       }
       client.println(out);
       Serial.println(out);
